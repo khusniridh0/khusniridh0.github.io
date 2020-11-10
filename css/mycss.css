@@ -1,0 +1,287 @@
+/*Utility*/
+
+.text-center{
+	text-align: center;
+}
+
+.text-shadow{
+	text-shadow: 1px 1px 1px #000000b3;
+}
+
+.tombol{
+	text-decoration: none;
+	color: #fff;
+}
+
+.batas{
+	border-bottom: 3px solid #05f6ffcc;
+}
+
+.bdr, .title{
+	border-bottom: 1px solid #000;
+}
+
+.bdr-right{
+	border-right: 1px solid #000;
+}
+
+.icons{
+	display: block;
+	width: 30px;
+	height: 30px;
+	
+}
+
+.box-shadow-2{
+	box-shadow:  1px 3px 8px #888888;
+}
+
+.box-shadow-4{
+	box-shadow:  0px 0px 20px #888888;
+}
+
+.title{
+	display: block;
+	width: max-content;
+	background: pink;
+}
+
+.tengah{
+	display: flex;
+	justify-content: center;
+}
+
+/* akhir Utility*/
+
+.navbar{
+	background: white;
+}
+
+.navbar-brand{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/*slider*/
+
+.jumbotron-fluid{
+	margin-top: 60px;
+	overflow: hidden;
+	color: white;
+}
+
+/*berita*/
+
+.berita{
+	
+}
+
+/*profile*/
+
+.profile{
+	background: #1162FA;
+	color : #fff;
+}
+
+.embed-responsive{
+	border-bottom: 2px solid #fff;
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-top: -3px solid #fff;
+}
+
+
+
+.card-profile{
+	background: #1162FA;
+}
+
+.card-body{
+	color: #000;
+}
+
+.center{
+	text-align: center;
+}
+
+/*gallery */
+
+.galery{
+	background: #1162FA;
+}
+
+.c-galery{
+	color: #fff;
+}
+
+.card-img-top{
+	height: 163px;
+}
+
+.modal-body{
+	height: 100%;
+	overflow: hidden;
+}
+
+.caption{
+	height: 100%;
+	overflow: auto;
+}
+
+
+/*lokasi*/
+
+.map{
+	width: 94%;
+	padding: 0px;
+}
+
+.size{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+
+
+/*foofer*/
+
+footer{
+	background: #000;
+	color: #ffff;
+	padding-top: 15px;
+	padding-bottom: 1px;
+}
+
+footer{
+	text-align: center;
+}
+
+
+/*---------------------------------------halaman Profil---------------------------------------------*/
+
+.head{
+	background: #373C43;
+	height: 30px;	
+}
+
+.header{
+	background-image: url('../gambar/logo/header.png');
+	margin: 0px;
+	padding: 0px;
+}
+
+.gambar{
+	display: block;
+	width: 100%;
+}
+
+.back{
+	background: #eeeeee;
+}
+
+
+/*--------------------------------------akhir halaman Profil---------------------------------------------*/
+
+/*Versi Dekstop*/
+
+/*Utility versi dekstop*/
+
+.title{
+	display: block;
+	width: max-content;
+}
+
+.kanan{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: : 100px;
+}
+
+.kiri{
+	display: flex;
+	justify-content: flex-start;
+}
+
+/* akhir Utlity versi dekstop*/
+
+@media (min-width: 768px) {
+	.caption{
+		height: 500px;
+	}	
+}
+
+@media (min-width: 992px){
+
+/*Navbar*/
+	.navbar{
+		background: #ffffff00;
+	}
+
+	.bg-navbar{
+		background: #1162FA;
+	}
+
+	.navbar-brand, .nav-link{
+	color: white !important;
+	}
+
+
+	.nav-item{
+		text-transform: uppercase;
+		font-size: 15px;
+		margin-right: 15px;
+	}
+
+	.nav-link:hover{
+		content: '';
+		border-bottom: 3px solid #007bff;
+		margin-top: -3px;
+	}
+
+/*Jumbotron*/
+	.jumbotron-fluid{
+		margin: 0px;
+		
+	}
+
+	.carousel-item{
+		max-height: 696px;
+	}
+
+/*profile*/
+	.center{
+		text-align: left;
+		margin-top: 20px;
+	}
+
+/*galery*/
+	.card-img-top{
+		height: 163px;
+	}
+
+	.modal-body{
+		overflow: hidden;
+	}
+
+	.img{
+		margin-top: 0px;
+	}
+
+
+/*lingkungan*/
+	.peta{
+		width: 50%;
+		border: 2px solid #000;
+		border-radius: 5px;
+		justify-content: center;
+	}
+	
+/*---------------------------------------halaman Profil---------------------------------------------*/
+
+/*--------------------------------------akhir halaman Profil---------------------------------------------*/
+
+
+
+
+}
