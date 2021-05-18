@@ -129,6 +129,7 @@
 	margin: 35px auto 20px;
 }
 
+
 /*end utilitis*/
 
 footer{
@@ -186,7 +187,7 @@ footer{
 		padding: 30px;
 	}
 
-	.profil{
+	.picture{
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
@@ -389,7 +390,7 @@ footer{
 		padding: 30px;
 	}
 
-	.profil{
+	.picture{
 		width: 150px;
 		height: 150px;
 		border-radius: 50%;
