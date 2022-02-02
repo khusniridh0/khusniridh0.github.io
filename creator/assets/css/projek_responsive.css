@@ -1,0 +1,155 @@
+@media(max-width: 768px){
+	.m-order-1{
+		-ms-flex-order:-1;
+		order:-1
+	}
+	.m-order-2{
+		-ms-flex-order:-1;
+		order:-2
+	}
+	.m-order-3{
+		-ms-flex-order:-1;
+		order:-3
+	}
+	.m-order-4{
+		-ms-flex-order:-1;
+		order:-4
+	}
+	.m-order-5{
+		-ms-flex-order:-1;
+		order:-5
+	}
+	.m-order-6{
+		-ms-flex-order:-1;
+		order:-6
+	}
+	.xs-mt-5,
+	.xs-my-5{
+		margin-top: 3rem;
+	}
+	.xs-mt-4,
+	.xs-my-4{
+		margin-top: 1.5rem;
+	}
+	.xs-mt-3,
+	.xs-my-3{
+		margin-top: 1rem;
+	}
+	.xs-mt-2,
+	.xs-my-2{
+		margin-top: .5rem;
+	}
+	.xs-mt-1,
+	.xs-my-1{
+		margin-top: .25rem;
+	}
+	.xs-mb-5,
+	.xs-my-5{
+		margin-bottom: 3rem;
+	}
+	.xs-mb-4,
+	.xs-my-4{
+		margin-bottom: 1.5rem;
+	}
+	.xs-mb-3,
+	.xs-my-3{
+		margin-bottom: 1rem;
+	}
+	.xs-mb-2,
+	.xs-my-2{
+		margin-bottom: .5rem;
+	}
+	.xs-mb-1,
+	.xs-my-1{
+		margin-bottom: .25rem;
+	}
+	.xs-ml-5,
+	.xs-mx-5{
+		margin-left: 3rem;
+	}
+	.xs-ml-4,
+	.xs-mx-4{
+		margin-left: 1.5rem;
+	}
+	.xs-ml-3,
+	.xs-mx-3{
+		margin-left: 1rem;
+	}
+	.xs-ml-2,
+	.xs-mx-2{
+		margin-left: .5rem;
+	}
+	.xs-ml-1,
+	.xs-mx-1{
+		margin-left: .25rem;
+	}
+	.xs-mr-5,
+	.xs-mx-5{
+		margin-right: 3rem;
+	}
+	.xs-mr-4,
+	.xs-mx-4{
+		margin-right: 1.5rem;
+	}
+	.xs-mr-3,
+	.xs-mx-3{
+		margin-right: 1rem;
+	}
+	.xs-mr-2,
+	.xs-mx-2{
+		margin-right: .5rem;
+	}
+	.xs-mr-1,
+	.xs-mx-1{
+		margin-right: .25rem;
+	}
+}
+@media only screen and (max-width : 2500px) {
+	.page-wrapper{
+		overflow:hidden;
+	}
+}
+
+@media only screen and (max-width : 991px) {
+	.atf-footer-boottom p{
+		text-align:center;
+	}
+	.atf-footer-area .atf-banner-social{
+		text-align:center;
+		padding-top:30px;
+	}
+	.atf-jumbotron .atf-content-desc{
+		padding: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar-navs.navbar-expend .menu-nav,
+	.navbar-navs.navbar-collaps .menu-nav{
+		margin-left:0px;
+	}
+	.navbar-navs {
+		transition: all .5s ease-in-out;
+	}
+	.navbar-nav .menu-nav a::before{
+		display:none;
+	}
+	.navbar-toggler{
+		margin-top:-5px;
+	}
+	.atf-jumbotron {
+		margin: 0 20px;
+	}
+	.atf-jumbotron .atf-content-desc{
+		padding: 0 40px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.atf-jumbotron {
+		margin: 0;
+	}
+	.atf-jumbotron .atf-content-desc{
+		padding: 0 25px;
+	}
+}
