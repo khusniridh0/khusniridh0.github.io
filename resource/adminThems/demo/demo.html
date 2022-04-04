@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <!-- Fonts google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;900&family=Viga&display=swap" rel="stylesheet">
+  <!-- Resource css -->
+  <link rel="stylesheet" href="./assets/vendor/bootstrap-4.6.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/fontawesome-free-6.0.0-web/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <title>Khusni Ridho | Home</title>
+</head>
+
+<body>
+  <div class="preload bg-dark">
+    <img src="./assets/img/logo.png">
+    <div class="wev"></div>
+  </div>
+
+  <nav class="sidebar">
+    <header>
+      <div class="brand pt-3">
+        <div class="logo mr-1">
+          <img src="./assets/img/logo.png">
+        </div>
+        <div class="text-brand ml-1">
+          <div class="brand-name">Khusni</div>
+          <span>Web Developer</span>
+        </div>
+        <i class="minimize-icon fa-solid fa-angle-right"></i>
+      </div>
+    </header>
+
+    <div class="menu-bar mt-5">
+      <div class="menu-links">
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <span>HOME</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <span>HTML</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-brands fa-css3"></i>
+            </div>
+            <span>CSS</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <span>Bootstrap</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <span>Javascript</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-brands fa-php"></i>
+            </div>
+            <span>PHP</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">
+            <div class="nav-link-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <span>Mysql</span>
+          </a>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <div class="links">
+          <div class="bottom-nav-links">
+            <a href="#signin" data-toggle="modal">
+              <div class="nav-link-icon">
+                <i class="fa-solid fa-right-to-bracket"></i>
+              </div>
+              <span>Sign In</span>
+            </a>
+          </div>
+          <div class="mode">
+            <div class="icon-mode">
+              <i class="fa-solid fa-moon unhide"></i>
+              <i class="fa-solid fa-sun hidden"></i>
+            </div>
+            <span class="text-mode">Dark Mode</span>
+            <div class="toggle-switch">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade show" id="signin" tabindex="-1" aria-labelledby="signin modal" aria-hidden="false">
+    <div class="modal-dialog">
+      <form action="#" method="POST">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Sign In</h3>
+          </div>
+          <div class="modal-body">
+            <div class="form mt-4">
+              <input type="email" name="username" class="form-input" id="email" autocomplete="off">
+              <label class="form-label" for="email">Email</label>
+            </div>
+            <div class="form mt-4">
+              <input type="password" name="password" class="form-input" id="pass" autocomplete="off">
+              <label class="form-label" for="pass">Password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" type="button" data-dismiss="modal">Cencel</button>
+            <button class="btn" type="submit">Sign In</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <button class="up component">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="modal fade show" id="edit-content" tabindex="-1" aria-labelledby="edit-content modal" aria-hidden="false">
+    <div class="modal-dialog modal-lg">
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="id">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Edit Content</h3>
+          </div>
+          <div class="modal-body">
+            <div class="custom-file">
+              <input type="file" name="image" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile"><span>Cari Gambar Baru</span></label>
+            </div>
+            <div class="form mb-4">
+              <input type="text" name="title" class="form-input" id="title" autocomplete="off">
+              <label class="form-label" for="title">Title</label>
+            </div>
+            <div class="form mt-4">
+              <textarea name="content" id="content" class="form-input"></textarea>
+              <label class="form-label" for="content">Content</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" type="button" data-dismiss="modal">Cencel</button>
+            <button class="btn" type="submit">Simpan</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="alert-app">
+  </div>
+
+  <div class="contents-wrapper"><div class="container-fluid">
+    <div class="row main-content">
+      <div class="col text-center">
+        <h1 class="text-white text-shadow">Halo, Ini tugas besar saya</h1>
+        <h1 class="text-white text-shadow">Khusni Ridho</h1>
+        <p class="text-white text-shadow mb-5">Saya merupakan salah satu siswa di Eduwork, saya belajar di eduwordk baru beberapa minggu ini hingga saya bisa menyelesaikan tugas besar saya.</p>
+        <a class="btn" href="https://khusniridh0.github.io/creator/" target="__blank">
+          <span></span>
+          <span>Lihat Profile</span>
+        </a>
+        <a class="btn" href="https://khusniridh0.github.io/creator/#projek" target="__blank">
+          <span></span>
+          <span>Lihat Tugas</span>
+        </a>
+      </div>
+      <img src="./assets/img/Character-swinging.png">
+      <img src="./assets/img/Character-swinging.png">
+      <span class="bob"></span>
+      <span class="bob"></span>
+    </div>
+  </div>
+
+  <div class="container task-list">
+    <div class="row">
+      <div class="col py-5">
+        <h1 class="text-center my-5">Tugas Saya</h1>
+        <div class="row justify-content-center">
+          <div class="col card-task">
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/html.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas HTML</h5>
+                <p class="card-text">Tugas ini dibuat hanya dengan HTML saja tanpa tambahan apa pun</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/css.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas CSS</h5>
+                <p class="card-text">Tugas ini dibuat hanya dengan HTML dan CSS mengikuti layot pada video</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/bootstrap.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas Bootstrap</h5>
+                <p class="card-text">Sebisa mungkin dan sebisa saya meniru website eduwork semoga bagus</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/javascript.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas JavaScript</h5>
+                <p class="card-text">Sedikit susah tapi tak jadi masalah saya suka tantangan lain kali lagi ya</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/php.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas PHP</h5>
+                <p class="card-text">Bahasa mudah dipahami tidak begitu rumit, tapi susah di implementasikan</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <div class="card-img">
+                <img src="./assets/img/mysql.png" class="card-img-top">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tugas Mysql</h5>
+                <p class="card-text">Gampang gampang susah, tapi banyak susahnya. Tantangan baru buat saya</p>
+              </div>
+              <div class="card-footer">
+                <a href="#"><span>Lihat tugas</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="sticky-bottom">
+    <div class="footer-wave">
+      <div class="wave-item wave1"></div>
+      <div class="wave-item wave2"></div>
+      <div class="wave-item wave3"></div>
+      <div class="wave-item wave4"></div>
+    </div>
+    <div class="footer-icons">
+      <ul>
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-menus">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Bootstrap</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">PHP</a></li>
+        <li><a href="#">Mysql</a></li>
+      </ul>
+    </div>
+    <div class="copyry">
+      <p>Creator By <span><i class="fa-solid fa-heart"></i></span> <a href="https://khusniridh0.github.io/creator/" target="__blank"> Khusni Ridho</a></p>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript" src="./assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./assets/vendor/bootstrap-4.6.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+
+</html>
