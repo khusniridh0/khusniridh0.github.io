@@ -20,6 +20,18 @@
     width: 50px;
     top: 20px;
   }
+  .input-form-conten .info-pembayaran{
+    width: 300px;
+  }
+  .info-pembayaran .status-pembayaran img{
+    width: 100px;
+  }
+  .info-pembayaran .status-pembayaran .invois table td{
+    padding: 0 6px;
+  }
+  .info-pembayaran .status-pembayaran tr td:nth-child(2){
+    font-size: 14px;
+  }
 }
 
 /*
@@ -59,7 +71,15 @@
   footer .container small{
     order: 2;
   }
-  
+  .input-form-conten .info-pembayaran{
+    max-width: 400px !important;
+  }
+  .sm-hide{
+    display: none;
+  }
+  #bayar.input-form-conten .form-avatar .invois{
+    margin: 20px auto;
+  }
 }
 
 /*
@@ -93,6 +113,13 @@
   .hs-content-heading .hs-content-title{
     font-size: 30px;
     margin-left: 20px;
+  }
+  .input-form-conten .info-pembayaran{
+    max-width: 500px;
+  }
+  .br-bottom{
+    border: none;
+    border-bottom: 1px solid #000 !important;
   }
 }
 

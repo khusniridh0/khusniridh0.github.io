@@ -70,6 +70,12 @@ button, button:focus{
 }
 
 
+/* 
+============================================================
+          ============ Form Page ============
+============================================================
+*/
+
 /*
   ============ Hero Section ============
 */
@@ -172,11 +178,37 @@ button, button:focus{
   margin-bottom: 30px;
 }
 .hs-main-content .card{
+  position: relative;
   max-width: 18rem;
   border: none;
   border-radius: 50px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, .4);
+}
+.hs-main-content .card .btn-action{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.hs-main-content .card .btn-action a{
+  background: var(--color-brown);
+  display: block;
+  margin-bottom: 10px;
+  width: 200px;
+  transform: translateX(200px);
+  color: var(--color-white);
+  transition: all .3s ease-in-out;
+}
+.hs-main-content .card .btn-action a:nth-child(2){
+  background: var(--color-skin);
+  color: var(--color-brown);
+  transition-delay: .2s;
+}
+.hs-main-content .card:hover .btn-action a{
+  transform: translateX(0);
 }
 .hs-main-content .card-body{
   position: relative;
@@ -215,17 +247,258 @@ button, button:focus{
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 50%;
+  font-size: 20px;
 }
 .hs-main-content span.active{
-  font-size: 20px;
   color: var(--color-red);
 }
+
+
+/* 
+============================================================
+          ============ Form Page ============
+============================================================
+*/
+
+/*
+  ============ Page Wrapper ============
+*/
+
+.page-wrapper {
+  background-color: var(--color-white);
+  height: calc(100vh - 58px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-form{
+  padding: 0 50px;
+}
+.input-form .content-form{
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, .2), -10px -10px 50px rgba(0, 0, 0, .2);
+}
+.content-form .input-form-conten .col:nth-child(1){
+  padding: 50px;
+}
+.content-form .input-form-conten .col:nth-child(1) form{
+  padding: 12px 2px;
+  height: 380px;
+  overflow: scroll;
+}
+.content-form .input-form-conten .col:nth-child(1) form::-webkit-scrollbar{
+  display: none;
+}
+.content-form .input-form-conten .form-avatar{
+  overflow: hidden;
+}
+.input-form-conten h1{
+  font-size: 25px;
+}
+.input-form-conten form{
+  padding-top: 20px;
+}
+.input-form-conten .forms{
+  position: relative;
+  height: 45px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.input-form-conten .forms label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-60%);
+  transition: all .5s ease;
+}
+.input-form-conten .forms .form-control, .input-form-conten .forms label,
+.input-form-conten .form-textarea .form-area, .input-form-conten .form-textarea label{
+  color: var(--color-brown);
+  padding-left: 15px;
+  font-weight: 600;
+}
+.input-form-conten .forms .form-control{
+  background-color: transparent;
+  border: none;
+  outline: 2px solid var(--color-brown);
+  padding: 0 20px;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  border-radius: 50px;
+}
+.input-form-conten .forms .form-control:focus ~ label,
+.input-form-conten .form-textarea .form-area:focus ~ label,
+label.active{
+  transition: all .5s ease;
+  opacity: 0;
+}
+.input-form-conten .form-textarea{
+  position: relative;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.input-form-conten .form-textarea .form-area{
+ width: 100%;
+ height: 160px;
+ border-radius: 20px;
+ border: none;
+ outline: 2px solid var(--color-brown);
+ padding-left: 20px;
+}
+.input-form-conten .form-textarea label{
+ position: absolute;
+ left: 5px;
+ transition: all .5s ease;
+}
+.input-form-conten .form-check label{
+  color: var(--color-brown);
+  padding-left: 15px;
+  font-weight: 600;
+}
+.input-form-conten .media img{
+  max-width: 80px;
+}
+.forms-image{
+  position: relative;
+  border: 2px dashed var(--color-brown);
+  border-radius: 15px;
+  height: 280px;
+  margin-bottom: 30px;
+}
+.forms-image.custom-form{
+  height: 180px;
+}
+.forms-image .upload_hide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 5;
+  opacity: 0;
+}
+.forms-image .image img{
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.forms-image .nav-action{
+  text-align: center;
+  margin-top: 60px;
+}
+.forms-image .nav-action i {
+  color: var(--color-brown);
+  text-align: center;
+  font-size: 50px;
+}
+.forms-image .nav-action .btn {
+  max-width: 300px;
+}
+.forms-image.custom-form .nav-action{
+  text-align: center;
+  margin-top: -10px;
+}
+.forms-image.custom-form .btn{
+  max-width: 200px;
+}
+.delete_file {
+  max-width: 200px;
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+.delete_piture{
+  max-width: 200px;
+}
+.input-form-conten .btn{
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  width: 100%;
+  margin-bottom: 10px;
+}
+.content-form .form-avatar{
+  position: relative;
+  padding: 0;
+}
+.content-form .form-avatar img{
+  width: 100%;
+  height: 100%;
+}
+.input-form-conten .info-pembayaran{
+  margin: 40px auto;
+  display: inline-block;
+  text-align: center;
+  max-width: 800px;
+}
+.info-pembayaran h1{
+  color: var(--color-brown);
+}
+.info-pembayaran .status-pembayaran{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-pembayaran .status-pembayaran .invois table td{
+  padding: 6px;
+}
+.info-pembayaran .rinci{
+  margin-top: 30px;
+  width: 100%;
+}
+.br-bottom{
+  border: 1px solid #000;
+}
+
+.info-pembayaran form{
+  display: flex;
+}
+.info-pembayaran form select{
+  background-color: transparent;
+  border-radius: 50px;
+  outline: 2px solid var(--color-brown);
+  border: none;
+  padding: 0 20px;
+  flex: 1;
+  margin: 0 10px 0 0;
+}
+.info-pembayaran form button, .info-pembayaran form a{
+  flex: 1;
+  margin: 0 0 0 10px;
+}
+#bayar.input-form-conten .form-avatar .invois{
+  margin: 50px auto;
+}
+#bayar.input-form-conten .form-avatar .QR{
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 50px auto;
+}
+.modal-footer .btn{
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+
+
+
 
 
 /*
   ============ End Section ============
 */
-
 
 #end-content{
   background-color: var(--color-skin);

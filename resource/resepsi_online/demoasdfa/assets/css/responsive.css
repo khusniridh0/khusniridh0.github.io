@@ -1,0 +1,102 @@
+/*
+  ============= Extra small devices (portrait phones, less than 576px) =============
+*/
+@media (max-width: 575.98px) {
+  #main-content{
+    margin-top: 40px !important;
+
+  }
+  .hs-content-heading .display-3{
+    font-size: 40px !important;
+  }
+  .hs-content-heading .hs-content-title{
+    font-size: 20px !important;
+    margin-left: 18px;
+  }
+  .hs-content-heading span{
+    font-size: 16px;
+  }
+  .hs-content-heading span:after{
+    width: 50px;
+    top: 20px;
+  }
+}
+
+/*
+  ============= Small devices (landscape phones, less than 768px) =============
+*/
+@media (max-width: 767.98px) {
+  .hs-hero{
+    text-align: center;
+  }
+  .hs-hero .hs-hero-caption button{
+    background-color: var(--color-brown);
+    color: var(--color-skin);
+    font-size: 20px;
+    padding: 10px 60px;
+    margin-left: 50px;
+    margin-top: 30px;
+    transition: all .2s ease-in-out;
+  }
+  .hs-hero .hs-hero-caption button:hover{
+    background-color: var(--color-skin);
+    color: var(--color-white);
+  }
+  .hs-hero .hs-hero-avatar{
+    width: calc(100% - 150px);
+    margin: 50px auto -50px;
+  }
+  .hs-content-heading .display-3{
+    font-size: 50px;
+  }
+  .hs-content-heading .hs-content-title{
+    font-size: 25px;
+    margin-left: 18px;
+  }
+  footer .container{
+    flex-direction: column;
+  }
+  footer .container small{
+    order: 2;
+  }
+  
+}
+
+/*
+  =============Medium devices (tablets, less than 992px) =============
+*/
+@media (max-width: 991.98px) {
+  p{
+    font-size: 16px !important;
+  }
+  .navbar-brand img{
+    width: calc(100% - 50px);
+  }
+  .jumbotron .wave{
+    bottom: -40px;
+  }
+  .hs-hero .hs-hero-caption h1{
+    font-size: 35px;
+  }
+  .hs-hero .hs-hero-caption button{
+    font-size: 16px;
+    padding: 10px 40px;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  #main-content{
+    margin-top: 100px;
+  }
+  .hs-content-heading .display-3{
+    font-size: 60px;
+  }
+  .hs-content-heading .hs-content-title{
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}
+
+/*
+  ============= Large devices (desktops, less than 1200px) =============
+*/
+@media (max-width: 1199.98px) { ... }
