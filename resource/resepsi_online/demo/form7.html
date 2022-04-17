@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,11 @@
   <link rel="stylesheet" href="./assets/css/responsive.css">
   <title>Resepsi online | Tema</title>
 </head>
+
 <body>
 
   <div class="page-wrapper">
-    <div class="container input-form">
+    <div class="container-lg input-form">
       <div class="row h-100">
         <div class="col-12 content-form">
           <div class="row input-form-conten" id="bayar">
@@ -43,14 +45,56 @@
                     </tr>
                   </table>
                 </div>
-                <button class="btn btn-custom" data-toggle="modal" data-target="#Help">Bantuan</button>
+                <button class="btn btn-custom btn-mobile" data-toggle="modal" data-target="#Help">Bantuan</button>
               </div>
             </div>
           </div>
 
           <!-- Modal -->
-          <div class="modal fade" id="Help" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="Help" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- <div class="modal fade" id="Help" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="staticBackdropLabel">Bantuan Pembayaran</h5>
@@ -72,7 +116,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -94,4 +138,5 @@
   <script type="text/javascript" src="./assets/js/script.js"></script>
 
 </body>
+
 </html>

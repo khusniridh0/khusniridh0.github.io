@@ -2,34 +2,33 @@
   ============= Extra small devices (portrait phones, less than 576px) =============
 */
 @media (max-width: 575.98px) {
-  #main-content{
+  #main-content {
     margin-top: 40px !important;
-
   }
-  .hs-content-heading .display-3{
+  .hs-content-heading .display-3 {
     font-size: 40px !important;
   }
-  .hs-content-heading .hs-content-title{
+  .hs-content-heading .hs-content-title {
     font-size: 20px !important;
     margin-left: 18px;
   }
-  .hs-content-heading span{
+  .hs-content-heading span {
     font-size: 16px;
   }
-  .hs-content-heading span:after{
+  .hs-content-heading span:after {
     width: 50px;
     top: 20px;
   }
-  .input-form-conten .info-pembayaran{
+  .input-form-conten .info-pembayaran {
     width: 300px;
   }
-  .info-pembayaran .status-pembayaran img{
+  .info-pembayaran .status-pembayaran img {
     width: 100px;
   }
-  .info-pembayaran .status-pembayaran .invois table td{
+  .info-pembayaran .status-pembayaran .invois table td {
     padding: 0 6px;
   }
-  .info-pembayaran .status-pembayaran tr td:nth-child(2){
+  .info-pembayaran .status-pembayaran tr td:nth-child(2) {
     font-size: 14px;
   }
 }
@@ -38,46 +37,31 @@
   ============= Small devices (landscape phones, less than 768px) =============
 */
 @media (max-width: 767.98px) {
-  .hs-hero{
-    text-align: center;
-  }
-  .hs-hero .hs-hero-caption button{
-    background-color: var(--color-brown);
-    color: var(--color-skin);
-    font-size: 20px;
-    padding: 10px 60px;
-    margin-left: 50px;
-    margin-top: 30px;
-    transition: all .2s ease-in-out;
-  }
-  .hs-hero .hs-hero-caption button:hover{
+  .hs-hero .hs-hero-caption button:hover {
     background-color: var(--color-skin);
     color: var(--color-white);
   }
-  .hs-hero .hs-hero-avatar{
+  .hs-hero .hs-hero-avatar {
     width: calc(100% - 150px);
     margin: 50px auto -50px;
   }
-  .hs-content-heading .display-3{
+  .hs-content-heading .display-3 {
     font-size: 50px;
   }
-  .hs-content-heading .hs-content-title{
+  .hs-content-heading .hs-content-title {
     font-size: 25px;
     margin-left: 18px;
   }
-  footer .container{
+  footer .container {
     flex-direction: column;
   }
-  footer .container small{
+  footer .container small {
     order: 2;
   }
-  .input-form-conten .info-pembayaran{
+  .input-form-conten .info-pembayaran {
     max-width: 400px !important;
   }
-  .sm-hide{
-    display: none;
-  }
-  #bayar.input-form-conten .form-avatar .invois{
+  #bayar.input-form-conten .form-avatar .invois {
     margin: 20px auto;
   }
 }
@@ -86,44 +70,156 @@
   =============Medium devices (tablets, less than 992px) =============
 */
 @media (max-width: 991.98px) {
-  p{
-    font-size: 16px !important;
+  p,
+  ul {
+    font-size: 2.5rem !important;
   }
-  .navbar-brand img{
-    width: calc(100% - 50px);
+  .btn-custom {
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 50px;
   }
-  .jumbotron .wave{
+  .nav-custom {
+    font-size: 1.5rem;
+    height: 150px;
+    padding: 0 50px;
+  }
+  .navbar-brand img {
+    width: calc(100% + 50px);
+  }
+  .nav-custom .navbar-toggler span {
+    height: 6px;
+    width: 45px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+  .jumbotron {
+    padding-top: 200px;
+  }
+  .jumbotron .wave {
     bottom: -40px;
   }
-  .hs-hero .hs-hero-caption h1{
-    font-size: 35px;
+  .hs-hero .hs-hero-caption h1 {
+    font-size: 6rem;
   }
-  .hs-hero .hs-hero-caption button{
-    font-size: 16px;
+  .hs-hero .hs-hero-caption button {
+    background-color: var(--color-brown);
+    color: var(--color-skin);
+    font-size: 2em;
     padding: 10px 40px;
     margin-left: 50px;
     margin-top: 30px;
+    transition: all 0.2s ease-in-out;
   }
-  #main-content{
+  #main-content {
     margin-top: 100px;
   }
-  .hs-content-heading .display-3{
+  .hs-content-heading .display-3 {
     font-size: 60px;
   }
-  .hs-content-heading .hs-content-title{
+  .hs-content-heading .hs-content-title {
     font-size: 30px;
     margin-left: 20px;
   }
-  .input-form-conten .info-pembayaran{
+  .hs-main-content .card {
+    max-width: 50rem;
+  }
+  .hs-main-content .link-action a img {
+    width: 5rem;
+  }
+  .hs-main-content .link-action a:nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .hs-main-content .card .btn-action a {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    transform: translateX(120%);
+  }
+  .hs-main-content span {
+    padding: 10px 20px;
+    font-size: 2rem;
+  }
+  .input-form-conten .info-pembayaran {
     max-width: 500px;
   }
-  .br-bottom{
+  .br-bottom {
     border: none;
     border-bottom: 1px solid #000 !important;
+  }
+  .page-wrapper .md-d-none {
+    display: none;
+  }
+  .input-form {
+    margin: 50px;
+  }
+  .input-form .content-form {
+    height: auto;
+  }
+  .input-form-conten h1 {
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .input-form-conten .info-pembayaran {
+    max-width: 800px;
+  }
+  .input-form-conten .info-pembayaran h1 {
+    font-size: 5rem;
+    margin: 50px auto;
+  }
+  .input-form-conten table {
+    font-size: 2rem;
+  }
+  .input-form-conten form.cek-out {
+    margin-top: 80px;
+  }
+  .content-form .input-form-conten .col:nth-child(1) form {
+    height: auto;
+    overflow-y: auto;
+  }
+  .input-form-conten .info-pembayaran,
+  #bayar.input-form-conten .form-avatar .QR {
+    padding: 0px 50px;
+  }
+  .input-form-conten .info-pembayaran tr td:nth-child(1) {
+    text-align: left;
+    padding-left: 30px;
+  }
+  .input-form-conten .info-pembayaran tr td:nth-child(2) {
+    text-align: right;
+    padding-left: 30px;
+  }
+  .input-form-conten .forms {
+    height: 100px;
+  }
+  .input-form-conten .forms .form-control {
+    height: 100%;
+    font-size: 2rem;
+  }
+  .input-form-conten .forms .form-control,
+  .input-form-conten .forms label,
+  .input-form-conten .form-textarea .form-area,
+  .input-form-conten .form-textarea label,
+  .form-check {
+    font-size: 2rem;
+  }
+  .sm-hide {
+    display: none;
+  }
+  #bayar.input-form-conten .form-avatar .QR {
+    display: block;
+    width: 90vw;
+    height: auto;
+    margin: 50px auto;
+  }
+  .btn-mobile {
+    padding: 18px 0;
+    font-size: 2rem;
   }
 }
 
 /*
   ============= Large devices (desktops, less than 1200px) =============
 */
-@media (max-width: 1199.98px) { ... }
+/* @media (max-width: 1199.98px) { ... } */
