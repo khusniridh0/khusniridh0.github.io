@@ -190,6 +190,9 @@
     text-align: right;
     padding-left: 30px;
   }
+  .info-pembayaran form select {
+    font-size: 2rem;
+  }
   .input-form-conten .forms {
     height: 100px;
   }
