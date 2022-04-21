@@ -293,15 +293,20 @@ button:focus {
   overflow-y: scroll;
 }
 .content-form .input-form-conten .col:nth-child(1) form::-webkit-scrollbar {
+  display: none;
+}
+.input-form-conten .scrollbar {
   background-color: var(--color-skin);
+  position: absolute;
   width: 10px;
+  height: 500px;
+  left: 0;
   border-radius: 50px;
 }
-.content-form
-  .input-form-conten
-  .col:nth-child(1)
-  form::-webkit-scrollbar-thumb {
+.input-form-conten .scrollbar .track{
   background-color: var(--color-brown);
+  position: absolute;
+  width: 10px;
   border-radius: 50px;
 }
 .content-form .input-form-conten .form-avatar {

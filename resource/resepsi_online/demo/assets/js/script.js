@@ -114,4 +114,11 @@
   })
 
 
-})(jQuery);
+  $('.input-form-conten .col form').scroll(function () {
+    let height = $(this).scrollTop()/(this.scrollHeight-$(this).innerHeight())*100
+    $('.scrollbar .track').css('height', height + '%');
+  })
+
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+})(jQuery)
