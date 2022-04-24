@@ -15,9 +15,10 @@
   margin-left: 5px;
 }
 .sosial-info .container-lg i {
-  background-color: var(--bs-white);
+  background-color: var(--bs-cyan);
   border-radius: 50px;
   padding: 8px;
+  color: var(--bs-light);
 }
 .sosial-info .container-lg .social-contact a {
   position: relative;
@@ -33,12 +34,13 @@
 }
 .sosial-info .container-lg .social-contact a:hover i,
 .sosial-info .container-lg .social-contact a:hover span {
-  color: var(--primary-color);
+  color: var(--bs-dark);
+  transition: 0.5s;
   transition-delay: 0.4s;
 }
 .sosial-info .container-lg .social-contact a::before {
   content: '';
-  background-color: var(--bs-white);
+  background-color: var(--bs-cyan);
   position: absolute;
   width: 0%;
   height: 100%;
@@ -51,7 +53,7 @@
   width: 100%;
 }
 .sosial-info .container-lg .social-links i:hover {
-  color: var(--primary-color);
+  color: var(--bs-dark);
   transition: 0.4s;
 }
 @media (max-width: 767.98px) {
@@ -80,6 +82,10 @@
 /*									Slider								 */
 /* ======================================= */
 
+#hero{
+  position: relative;
+  padding: 0;
+}
 .swiper-button-next,
 .swiper-button-prev {
   background-color: rgba(0, 0, 0, 0.5);
@@ -95,6 +101,9 @@
 .swiper-button-next i,
 .swiper-button-prev i {
   font-size: 1.5rem;
+}
+.hero-pic{
+  width: 100vw;
 }
 
 @media (max-width: 991.98px) {
