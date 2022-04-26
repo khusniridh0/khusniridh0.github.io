@@ -1,5 +1,7 @@
 :root {
   --primary-color: #37517e;
+  --secondary-color: #47b2e4;
+  --white-color: #fff;
 }
 
 /* ======================================= */
@@ -60,14 +62,14 @@
   .sosial-info {
     height: auto;
     padding: 16px 0;
-  }  
-  .sosial-info .container-lg{
+  }
+  .sosial-info .container-lg {
     justify-content: center;
   }
   .sosial-info .container-lg .social-contact a {
     margin: 0 5px;
   }
-  .sosial-info .container-lg a span{
+  .sosial-info .container-lg a span {
     display: none;
   }
 }
@@ -82,7 +84,7 @@
 /*									Slider								 */
 /* ======================================= */
 
-#hero{
+#hero {
   position: relative;
   padding: 0;
 }
@@ -102,7 +104,7 @@
 .swiper-button-prev i {
   font-size: 1.5rem;
 }
-.hero-pic{
+.hero-pic {
   width: 100vw;
 }
 
@@ -148,4 +150,70 @@
 }
 .news .card .card-footer button .bi-heart-fill {
   color: var(--bs-danger);
+}
+
+/* ======================================= */
+/*				Membuat style Kepokmas  				 */
+/* ======================================= */
+
+.kepokmas .title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.kepokmas .title h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.kepokmas .title span {
+  background-color: #ddd;
+  position: absolute;
+  height: 1px;
+  width: 120px;
+  display: block;
+  bottom: -20px;
+  left: calc(50% - 15%);
+}
+.kepokmas .title span:before {
+  content: '';
+  background-color: var(--secondary-color);
+  position: absolute;
+  height: 5px;
+  width: 50px;
+  display: block;
+  bottom: -2px;
+  left: calc(50% - 20%);
+  border-radius: 50px;
+}
+.kepokmas .accordion-list ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+.kepokmas .card {
+  background-color: var(--white-color);
+  max-width: 30rem;
+  margin: 0 auto;
+  border: none;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.kepokmas .card:hover .card-header h5 {
+  color: var(--secondary-color);
+  transition: 0.2s ease-in-out;
+}
+.kepokmas .card .card-header {
+  background-color: transparent;
+  border: none;
+  padding-top: 25px;
+}
+.kepokmas .card .card-header h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.kepokmas .card .card-header span {
+  font-size: 14px;
+  color: var(--bs-gray-700);
 }
