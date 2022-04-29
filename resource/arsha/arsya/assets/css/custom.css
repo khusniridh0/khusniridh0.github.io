@@ -270,9 +270,11 @@ h1.display-3{
 /*              Left content               */
 /* ======================================= */
 
+.title-default{
+  color: var(--primary-color);
+}
 .news-content .hero{
   margin-bottom: 50px;
-
 }
 .news-content .writing{
   margin-bottom: 100px;
@@ -335,7 +337,14 @@ h1.display-3{
 }
 .comment-form .form-control::-webkit-input-placeholder{
   color: var(--primary-color);
-
+}
+.comment-form .btn{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+}
+.comment-form .btn:focus{
+  box-shadow: 0 0 0 .25rem rgba(51, 85, 119, 0.25);
 }
 
 /* ======================================= */
@@ -344,6 +353,9 @@ h1.display-3{
 
 .list-group{
   margin-bottom: 100px;
+}
+.list-group .badge{
+  color: var(--secondary-color);
 }
 .more-topic .topic-title{
   margin-top: 50px;
