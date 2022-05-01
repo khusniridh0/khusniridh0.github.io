@@ -325,6 +325,22 @@ button:focus {
   border-radius: 50px;
   margin-bottom: 30px;
 }
+.input-form-conten .forms .domain{
+  background-color: var(--color-brown);
+  position: absolute;
+  color: var(--color-white);
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50px 0 0 50px;
+  padding: 0 20px;
+  margin-left: -1px;
+}
+.input-form-conten .forms .input-domain{
+  padding-left: 160px !important;
+}
+.input-form-conten .forms .label-domain{
+  padding-left: 155px !important;
+}
 .input-form-conten .forms label {
   position: absolute;
   top: 50%;
