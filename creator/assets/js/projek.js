@@ -1,11 +1,11 @@
 /*
-Author       : Khusni Ridho
-Template Name: Portofolio
-Version      : 0.2
-*/
+  Author       : Khusni Ridho
+  Template Name: Portofolio
+  Version      : 0.2
+  */
 
-(function($) {
-  "use strict";
+  (function($) {
+    "use strict";
 
   // Declaret navbar
   let navHeight = $('nav').outerHeight();
@@ -57,23 +57,23 @@ Version      : 0.2
 
   // Navbar reduce
   function menuReduce(){
-    // reduce
-    $('.navbar-collapse').collapse('hide');
-    if ($(window).scrollTop() > navHeight) {
-      $('#menu-top').addClass('bg-nav');
-    }else{
-      $('#menu-top').removeClass('bg-nav');
-    }
-
+  // reduce
+  $('.navbar-collapse').collapse('hide');
+  if ($(window).scrollTop() > navHeight) {
+    $('#menu-top').addClass('bg-nav');
+  }else{
+    $('#menu-top').removeClass('bg-nav');
   }
 
-  function showScrocllUp() {
-    if ($(window).scrollTop() > navHeight) {
-      $('.atf-back-to-top').css('bottom', '30px');
-    } else {
-      $('.atf-back-to-top').css('bottom', '-70px');
-    }
+}
+
+function showScrocllUp() {
+  if ($(window).scrollTop() > navHeight) {
+    $('.atf-back-to-top').css('bottom', '30px');
+  } else {
+    $('.atf-back-to-top').css('bottom', '-70px');
   }
+}
 
   //**================= clicked Scroll Up =====================**//
 
@@ -85,11 +85,19 @@ Version      : 0.2
     }, 1000, 'easeInOutExpo');
   });
 
-    //**================= WOW Scroll Spy =====================**//
-    let wow = new WOW({
+  //**================= WOW Scroll Spy =====================**//
+  let wow = new WOW({
     // disabled for mobile
     mobile: false
   });
-    wow.init();
+  wow.init();
 
-  })(jQuery);
+  // tilt-js
+  VanillaTilt.init(document.querySelectorAll(".tilt-js"),{
+    max: 15,
+    speed: 1000,
+    perspective: 1000,
+    transition: true
+  });
+
+})(jQuery);

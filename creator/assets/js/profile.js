@@ -1,7 +1,7 @@
 /*
-Author       : Khusni Ridho
-Template Name: Portofolio
-Version      : 0.2
+	Author       : Khusni Ridho
+	Template Name: Portofolio
+	Version      : 0.2
 */
 
 (function($) {
@@ -148,5 +148,12 @@ Version      : 0.2
 	});
 	wow.init();
 
+	// tilt-js
+	VanillaTilt.init(document.querySelectorAll(".tilt-js"),{
+		max: 15,
+		speed: 1000,
+		perspective: 1000,
+		transition: true
+	});
 
 })(jQuery);
