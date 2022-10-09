@@ -218,7 +218,12 @@ button {
 .atf-bubling {
   bottom: -80vh;
 }
-
+.rembow{
+  background: linear-gradient(90deg, #ff0101, lime, #009fff);
+  background-clip: text;
+  color: transparent;
+  animation: 1.8s rembow linear infinite;
+}
 @media only screen and (min-width : 991.1px) {
   .atf-bubling-item{
     animation: anim linear infinite;
@@ -233,6 +238,14 @@ button {
   }
   @keyframes anim{
     100%{transform: translateY(-1590vh)}
+  }
+}
+@keyframes rembow{
+  from{
+    filter: hue-rotate(360deg);
+  }
+  to{
+    filter: hue-rotate(0deg);
   }
 }
 /*

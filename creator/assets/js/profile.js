@@ -141,6 +141,17 @@
 		showCursor: true
 	});
 
+	//**================= Typed-word =====================**//
+	let dot = new Typed('.dot', {
+		strings: [". . .",". . ."],
+		typeSpeed: 85,
+		backSpeed: 85,
+		backDelay: 0,
+		startDelay: 500,
+		loop: true,
+		showCursor: false
+	});
+
 	//**================= WOW Scroll Spy =====================**//
 	let wow = new WOW({
 		// disabled for mobile
