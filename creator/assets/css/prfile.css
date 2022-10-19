@@ -219,10 +219,11 @@ button {
   bottom: -80vh;
 }
 .rembow{
-  background: linear-gradient(90deg, #ff0101, lime, #009fff);
+  background: linear-gradient(to right, #ff0101, lime, #009fff);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
-  animation: 1.8s rembow linear infinite;
+  animation: 1.7s rembow linear infinite;
 }
 @media only screen and (min-width : 991.1px) {
   .atf-bubling-item{
@@ -810,6 +811,15 @@ button {
 .atf-single-details .atf-main-btn{
   -webkit-animation: 1.7s .2s bounceInUp both;
   animation: 1.7s .2s bounceInUp both; 
+}
+.atf-sertification.active{
+  background-color: var(--thm-color);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 
