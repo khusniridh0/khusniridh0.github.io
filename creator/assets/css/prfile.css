@@ -167,7 +167,9 @@ input, textarea {
   border: 3px solid transparent;
   background: var(--thm-f6);
 }
+input.active,
 input:focus,
+textarea.active,
 textarea:focus {
   outline: none;
   border: 3px solid var(--thm-base);
@@ -812,16 +814,66 @@ button {
   -webkit-animation: 1.7s .2s bounceInUp both;
   animation: 1.7s .2s bounceInUp both; 
 }
-.atf-sertification.active{
-  background-color: var(--thm-color);
+.atf-certificat{
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  animation: fadeOut 0.3s both;
+}
+.atf-certificat .pop-up-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+.atf-certificat .pop-up-heading .btn-close{
+  position: relative;
+  color: var(--thm-white);
+  opacity: 1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.atf-certificat.active{
+  background-color: rgba(43, 29, 106, 0.5);
+  animation: fadeIn 0.3s both;
   z-index: 1030;
 }
-
+.atf-certificat.active .pop-up-heading .info{
+  color: var(--thm-white);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.atf-certificat.active .pop-up-heading .info b{
+  padding: 6px 12px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  border: 1px solid var(--thm-white);
+  margin: 0 5px;
+  font-weight: 600;
+}
+.atf-certificat.active .carousel-control-prev, .atf-certificat .carousel-control-next{
+  background-color: transparent;
+  opacity: 1;
+}
+.atf-certificat.active .carousel-control{
+  color: var(--thm-white);
+  background-color: var(--thm-base);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 0;
+  opacity: 0.5;
+  transition: all 0.3 ease-in-out;
+}
+.atf-certificat.active .carousel-control:hover{
+  color: var(--thm-white);
+  opacity: 1;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -1048,6 +1100,25 @@ button {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
   padding:45px;
   background:var(--thm-white);
+}
+.form-message{
+  position: absolute;
+  top: -20px;
+  right: 0;
+  color: var(--thm-font);
+  border: 2px solid var(--thm-base);
+  border-radius: 10px;
+  padding: 10px;
+  animation: bounceOutRight 0.5s both;
+  transition: all 0.3s ease-in-out;
+}
+.form-message.show{
+  animation: bounceInRight 0.5s both;
+}
+.form-message.error {
+  border-color: #ffa5a5;
+  color: #f00;
+  background-color: #ffe2e2;
 }
 .atf-contact-border h3 {
   color: var(--thm-color);

@@ -105,7 +105,7 @@
 						<h2 class="mb-0 d-block d-lg-block"><strong>Aku Khusni</strong><br /> <span class="theme_gray"></span><span class="typed-word"></span> </h2>
 						<div class="atf-main-btn mt-4">
 							<a href="https://drive.google.com/uc?export=download&id=1tjq4x7GIijz3gsMcFed8dm3Z1CYC4GmT" target="_blank" class="atf-themes-btn mr-1 mb-3">Unduh CV</a>
-							<a href="" class="atf-themes-btn btn-2 ml-1">Setifikasi</a>
+							<a href="#" class="certificat atf-themes-btn btn-2 ml-1">Setifikasi</a>
 						</div>
 					</div>
 					<div class="col-md-5 atf_home_img2 m-order-6 text-lg-center wow fadeInRight tilt-js" data-wow-duration="1.2s" data-wow-delay="0.4s" data-wow-offset="0">
@@ -114,9 +114,40 @@
 				</div>
 			</div>
 
-			<!-- <div class="atf-sertification active">
-				
-			</div> -->
+			<div class="atf-certificat">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="pop-up-heading mb-3">
+								<span class="info d-sm-none d-md-block">Tekan <b>ESC</b> untuk menutup</span>
+								<span class="btn-close"><i class="far fa-times-circle"></i></span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item">
+										<img src="./assets/img/certificate/sertifikat_course_dicoding.png" class="d-block w-100" alt="...">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-control-prev">
+						<button class="btn carousel-control" type="button" data-target="#carouselExampleControls" data-slide="prev">
+							<i class="fas fa-angle-left"></i>
+						</button>
+					</div>
+					<div class="carousel-control-next">
+						<button class="btn carousel-control" type="button" data-target="#carouselExampleControls" data-slide="next">
+							<i class="fas fa-angle-right"></i>
+						</button>
+					</div>
+				</div>
+			</div>
 		</section>
 		<!-- MAIN HOME END -->
 
@@ -394,32 +425,32 @@
 					<div class="col-lg-10 col-md-12 offset-lg-1 wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
 						<div class="row atf-contact-border">
 							<div class="col-md-12 col-lg-7 atf-border-right">
+								<p class="form-message">Pesan Berhasil di Kirim.</p>
 								<h3>Kirim Pesan</h3>
-								<form class="form atf-contact-form" id="contact-form" action="assets/php/mail.php" method="POST">
+								<form class="form atf-contact-form" id="contact-form">
 									<div class="atf-main-contact">
 										<div class="col-md-12">
 											<div class="form-group">
-												<input id="name" type="text" name="name" placeholder="Nama Anda" required="required">
+												<input class="form-input" id="name" type="text" name="name" placeholder="Nama Anda" required="required">
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<input id="form_email" type="email" name="email" placeholder="Email Anda" required="required">
+												<input class="form-input" id="email" type="text" name="email" placeholder="Email Anda" required="required">
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="form-group">
-												<textarea id="message" name="message" placeholder="Pesan Anda" rows="4" required="required"></textarea>
+												<textarea class="form-input" id="message" name="message" placeholder="Pesan Anda" rows="4" required="required"></textarea>
 											</div>
 										</div>
 										<div class="col-md-12">
 											<div class="atf-contact-btn">
-												<button type="submit" class="btn atf-themes-btn">Kirim Pesan</button>
+												<button type="button" class="btn atf-themes-btn">Kirim Pesan</button>
 											</div>
 										</div>
 									</div>
-								</form><br />
-								<p class="form-message"></p>
+								</form>
 							</div>
 							<!--- END COL -->
 
