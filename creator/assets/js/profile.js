@@ -12,7 +12,7 @@
 
 	//**================= Requerst data =====================**//
 	$.ajax({
-		url: 'http://localhost/husni/',
+		url: 'https://projek-ts81.000webhostapp.com/',
 		method: 'get',
 		dataType: 'json',
 		success: function(res) {
@@ -129,7 +129,7 @@
 
 		if (name_valid === true && email_valid === true && message_valid === true) {
 			$.ajax({
-				url: 'http://localhost/husni/',
+				url: 'https://projek-ts81.000webhostapp.com/',
 				method: 'post',
 				dataType: 'json',
 				data: {name, email, message},
