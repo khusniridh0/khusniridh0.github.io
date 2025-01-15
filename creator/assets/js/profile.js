@@ -42,7 +42,7 @@
 		$('.atf-certificat').addClass('active')
 	})
 
-	$('.atf-certificat .close').click(function (e) {
+	$('.atf-certificat .btn-close').click(function (e) {
 		e.preventDefault()
 		$('.atf-certificat').delay(350).fadeOut()
 		$('.atf-certificat').removeClass('active')
