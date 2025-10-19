@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Master</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/game.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="main-sidebar">
+            <div class="sidebar">
+                <h3 class="title">Mathematical Operator</h3>
+                <a href="#" class="link-mode" data-operator="add">Addition</a>
+                <a href="#" class="link-mode" data-operator="sub">Subtraction</a>
+                <a href="#" class="link-mode" data-operator="mul">Multiplication</a>
+                <a href="#" class="link-mode" data-operator="div">Division</a>
+            </div>
+            <div class="sidebar">
+                <h3 class="title">Lavel</h3>
+                <a href="#" class="link-lavel" data-lavel="easy">Easy</a>
+                <a href="#" class="link-lavel" data-lavel="medium">Medium</a>
+                <a href="#" class="link-lavel" data-lavel="hard">Hard</a>
+                <a href="#" class="link-lavel" data-lavel="extreme">Extreme</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="question-box">
+                <h1 class="title"></h1>
+                <div class="question">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <input type="text" class="answer-input" placeholder="Type your answer and press enter" />
+        </div>
+
+        <!-- aside -->
+        <aside class="stats">
+            <!-- Timer and Stats -->
+            <div class="timer">
+                <h2>00:00</h2>
+                <div>Time Countdown</div>
+            </div>
+            
+            <div class="best-score">
+                <h2>0</h2>
+                <div>Best Score</div>
+            </div>
+
+            <div class="summary">
+                <h2>Stats</h2>
+                <div class="stat-item score">
+                    <div class="stat-value">
+                        <span>Score</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="stat-item correct">
+                    <div class="stat-value">
+                        <span>Correct Answers</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="stat-item wrong">
+                    <div class="stat-value">
+                        <span>Wrong Answers</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="stat-item total-questions">
+                    <div class="stat-value">
+                        <span>Total Questions</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="stat-item avrage-questions">
+                    <div class="stat-value">
+                        <span>Avrage Score</span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+<script src="./assets/js/game.js"></script>
+</html>

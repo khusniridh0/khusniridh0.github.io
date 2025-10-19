@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --warna-primer: #3498db;
+    --warna-sekunder: #f1c40f;
+    --warna-tertiary: #9b59b6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F2F3F0;
+    color: #000506;
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+/* buat grid 12 columns dan bagi sidebar 3 columns di kanan, main-content 6 columns tengah, stats 3 columns di sebelah kiri */
+
+.sidebar {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.main-sidebar {
+    grid-column: 1 / span 3;
+}
+
+.main-sidebar .sidebar {
+    background-color: #D5D7FF;
+    border: 2px solid #35373B;
+}
+
+.main-sidebar .sidebar .title {
+    margin-bottom: 28px;
+}
+
+.main-sidebar .sidebar .link-mode,
+.main-sidebar .sidebar .link-lavel {
+    background-color: #35373B;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 20px 0 20px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.main-content {
+    grid-column: 4 / span 6;
+}
+
+.main-content .question-box {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #35373B;
+}
+
+.main-content .question-box .question {
+    font-size: 96px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.main-content .answer-input:focus {
+    outline: none;
+}
+
+.main-content .answer-input {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #35373B;
+    color: #35373B;
+    width: 100%;
+}
+
+.stats {
+    grid-column: 10 / span 3;
+}
+
+.stats .timer,
+.stats .best-score,
+.stats .summary {
+    border-radius: 10px;
+    border: 2px solid #35373B;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.stats .timer h2,
+.stats .best-score h2 {
+    font-size: 34px;
+}
+
+.stats .timer {
+    background-color: #D5D7FF;
+}
+
+.stats .best-score {
+    background-color: #FCE584;
+}
+
+.stats .summary {
+    background-color: #F0C47F;
+}
+
+.stats .summary .stat-item {
+    border-bottom: 1px solid #27292B;
+    padding: 10px 6px;
+}
