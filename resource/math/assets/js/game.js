@@ -116,6 +116,15 @@ const timerInterval = setInterval(() => {
     }
 }, 1000);
 
+const wrongAnswerInterval = () => {
+    if (config.start) {
+        answer.classList.add("wrong");
+        setTimeout(() => {
+            answer.classList.remove("wrong");
+        }, 500);
+    }
+};
+
 mode.forEach(item => {
     item.addEventListener("click", (e) => {
         e.preventDefault();
@@ -172,6 +181,10 @@ lavel.forEach(item => {
 answer.addEventListener("keydown", (e) => {
     e.preventDefault();
 
+    if (e.key === "F5" || (e.ctrlKey && e.key === "r")) {
+        location.reload();
+    }
+
     if (e.key >= 0 && e.key <= 9) {
         if (!config.start) {
             config.start = true;
@@ -214,6 +227,7 @@ answer.addEventListener("keydown", (e) => {
             config.score += config.lavel === 'easy' ? 2 : config.lavel === 'medium' ? 4 : config.lavel === 'hard' ? 6 : 8;
         } else {
             config.wrongAnswers += 1;
+            wrongAnswerInterval();
         }
 
         [config.num1, config.num2] = getNumber()
@@ -222,5 +236,8 @@ answer.addEventListener("keydown", (e) => {
     }
 })
 
-firstLoad()
-updateView()
+window.addEventListener('load', () => {
+    firstLoad()
+    updateView()
+    answer.focus();
+})
